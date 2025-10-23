@@ -1,7 +1,7 @@
 /* src/components/Portfolio.css */
 .portfolio {
   padding: 100px 2rem;
-  background: #fafbfc;
+  background: #f8fafc;
 }
 
 .portfolio-container {
@@ -17,13 +17,13 @@
 .portfolio-header h2 {
   font-size: 3rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #2d3748;
   margin-bottom: 1rem;
 }
 
 .portfolio-header p {
   font-size: 1.2rem;
-  color: #7f8c8d;
+  color: #718096;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -40,7 +40,7 @@
 
 .filter-btn {
   padding: 0.8rem 1.5rem;
-  border: 1px solid #e0e6ed;
+  border: 2px solid #e2e8f0;
   background: white;
   color: #64748b;
   border-radius: 8px;
@@ -51,17 +51,16 @@
 }
 
 .filter-btn:hover {
-  border-color: var(--category-color);
-  color: var(--category-color);
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px var(--category-color-light);
+  border-color: #667eea;
+  color: #667eea;
+  transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background: var(--category-color);
+  background: #667eea;
   color: white;
-  border-color: var(--category-color);
-  box-shadow: 0 2px 8px var(--category-color-light);
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
 }
 
 /* Projects Grid */
@@ -75,10 +74,10 @@
   background: white;
   border-radius: 12px;
   padding: 0;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid #f1f3f4;
+  border: 1px solid #f1f5f9;
   overflow: hidden;
   position: relative;
 }
@@ -89,14 +88,13 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(135deg, var(--brand-color) 0%, var(--brand-color) 100%);
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: #e0e6ed;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .card-header {
@@ -113,7 +111,7 @@
   background: white;
   border-radius: 8px;
   padding: 0.4rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,10 +125,10 @@
 }
 
 .budget-badge {
-  background: var(--brand-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   font-weight: 600;
   font-size: 0.85rem;
   white-space: nowrap;
@@ -143,32 +141,31 @@
 .card-content h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #2d3748;
   margin: 0 0 0.5rem 0;
   line-height: 1.3;
 }
 
 .product {
-  color: var(--brand-color);
+  color: #667eea;
   font-weight: 500;
   font-size: 0.9rem;
   margin: 0 0 0.8rem 0;
 }
 
 .role {
-  background: var(--brand-color-light);
-  color: var(--brand-color);
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 500;
   display: inline-block;
   margin-bottom: 1rem;
-  border: 1px solid var(--brand-color-light);
 }
 
 .objective-preview {
-  color: #5a6c7d;
+  color: #718096;
   line-height: 1.5;
   margin: 0 0 1.5rem 0;
   font-size: 0.9rem;
@@ -186,8 +183,8 @@
 }
 
 .view-case-study {
-  color: var(--brand-color);
-  font-weight: 500;
+  color: #667eea;
+  font-weight: 600;
   font-size: 0.85rem;
   display: flex;
   align-items: center;
@@ -196,7 +193,7 @@
 }
 
 .project-card:hover .view-case-study .arrow {
-  transform: translateX(2px);
+  transform: translateX(3px);
 }
 
 .arrow {
@@ -205,13 +202,14 @@
 }
 
 .category-tag {
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
   padding: 0.25rem 0.6rem;
   border-radius: 4px;
   font-size: 0.7rem;
   font-weight: 500;
   white-space: nowrap;
-  border: 1px solid currentColor;
-  opacity: 0.8;
+  border: 1px solid rgba(102, 126, 234, 0.2);
 }
 
 /* Modal Styles */
@@ -221,7 +219,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
@@ -244,14 +242,14 @@
   overflow-y: auto;
   position: relative;
   animation: slideUp 0.3s ease;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  border: 1px solid #e0e6ed;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  border: 1px solid #e2e8f0;
 }
 
 @keyframes slideUp {
   from { 
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   to { 
     opacity: 1;
@@ -261,32 +259,30 @@
 
 .modal-close {
   position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
-  background: rgba(0, 0, 0, 0.05);
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(0, 0, 0, 0.1);
   border: none;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
   z-index: 10;
   color: #64748b;
 }
 
 .modal-close:hover {
-  background: rgba(0, 0, 0, 0.1);
-  transform: rotate(90deg);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .modal-header {
-  padding: 2.5rem 2.5rem 1.5rem;
-  border-bottom: 1px solid #f1f3f4;
-  background: white;
+  padding: 3rem 3rem 2rem;
+  border-bottom: 1px solid #f1f5f9;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -300,14 +296,14 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(135deg, var(--brand-color) 0%, var(--brand-color) 100%);
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .modal-brand {
   display: flex;
   align-items: flex-start;
-  gap: 1.2rem;
+  gap: 1.5rem;
   flex: 1;
 }
 
@@ -317,7 +313,7 @@
   background: white;
   border-radius: 12px;
   padding: 0.6rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,45 +329,45 @@
 
 .modal-client-info h2 {
   font-size: 2rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin: 0 0 0.4rem 0;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
   line-height: 1.2;
 }
 
 .modal-product {
-  color: var(--brand-color);
-  font-weight: 500;
+  color: #667eea;
+  font-weight: 600;
   font-size: 1rem;
-  margin: 0 0 0.4rem 0;
+  margin: 0 0 0.5rem 0;
 }
 
 .modal-role {
-  background: var(--brand-color-light);
-  color: var(--brand-color);
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: 1px solid var(--brand-color-light);
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .modal-budget {
-  background: var(--brand-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
   white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .modal-body {
-  padding: 2rem 2.5rem 2.5rem;
+  padding: 2rem 3rem 3rem;
 }
 
 .section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .section:last-child {
@@ -379,18 +375,18 @@
 }
 
 .section h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
+  color: #2d3748;
   margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--brand-color);
-  color: var(--brand-color);
+  border-left: 4px solid #667eea;
+  padding-left: 1rem;
 }
 
 .section p {
   color: #4a5568;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -401,13 +397,12 @@
 }
 
 .execution-list li {
-  padding: 0.6rem 0;
+  padding: 0.8rem 0;
   color: #4a5568;
   line-height: 1.5;
   position: relative;
-  padding-left: 1.2rem;
-  border-bottom: 1px solid #f8f9fa;
-  font-size: 0.95rem;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid #f8fafc;
 }
 
 .execution-list li:last-child {
@@ -416,22 +411,21 @@
 
 .execution-list li::before {
   content: "•";
-  color: var(--brand-color);
+  color: #667eea;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   position: absolute;
   left: 0;
-  top: 0.6rem;
+  top: 0.8rem;
 }
 
 .campaign-status {
-  background: rgba(255, 215, 0, 0.08);
+  background: rgba(255, 215, 0, 0.1);
   border: 1px solid rgba(255, 215, 0, 0.2);
-  padding: 0.8rem;
-  border-radius: 6px;
+  padding: 1rem;
+  border-radius: 8px;
   margin-top: 1rem !important;
   font-weight: 500;
-  font-size: 0.9rem;
 }
 
 /* Responsive Design */
@@ -447,7 +441,7 @@
   }
   
   .portfolio-header h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   
   .category-filters {
@@ -455,7 +449,7 @@
   }
   
   .filter-btn {
-    padding: 0.6rem 1rem;
+    padding: 0.7rem 1.2rem;
     font-size: 0.85rem;
   }
   
@@ -472,9 +466,9 @@
   }
   
   .modal-header {
-    padding: 2rem 1.5rem 1.2rem;
+    padding: 2rem 1.5rem 1.5rem;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.5rem;
   }
   
   .modal-brand {
@@ -492,13 +486,13 @@
   }
   
   .modal-client-info h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 480px) {
   .portfolio-header h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   .card-header {
@@ -516,7 +510,7 @@
   }
   
   .modal-header {
-    padding: 1.5rem 1.2rem 1rem;
+    padding: 1.5rem 1.2rem 1.2rem;
   }
   
   .modal-body {
@@ -524,10 +518,10 @@
   }
   
   .section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .section h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
