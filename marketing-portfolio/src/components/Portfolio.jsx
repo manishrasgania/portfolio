@@ -9,7 +9,7 @@ import dexogrowLogo from '../assets/brand-logos/dexogrow.png';
 import mrsBectorsLogo from '../assets/brand-logos/mrs-bectors.png';
 import niharLogo from '../assets/brand-logos/nihar.png';
 import niveaLogo from '../assets/brand-logos/nivea.png';
-import niveaSunLogo from '../assets/brand-logos/nivea-sun.png';
+import niveaSunLogo from '../assets/brand-logos/nivea.png';
 import tataLogo from '../assets/brand-logos/tata.png';
 
 const Portfolio = () => {
