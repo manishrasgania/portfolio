@@ -32,7 +32,7 @@
     gap: 0.75rem;
     font-weight: 700;
     font-size: 1.5rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #550B14 0%, #550B14 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -66,7 +66,7 @@
   }
   
   .nav-links a:not(.nav-cta):hover {
-    color: #667eea;
+    color: #550B14;
   }
   
   .nav-links a:not(.nav-cta)::after {
@@ -76,7 +76,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #7E6961 0%, #7E6961 100%);
     transition: width 0.3s ease;
   }
   
@@ -86,7 +86,7 @@
   
   /* CTA Button in Nav */
   .nav-cta {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #550B14 0%, #550B14 100%);
     color: white;
     border: none;
     padding: 12px 24px;

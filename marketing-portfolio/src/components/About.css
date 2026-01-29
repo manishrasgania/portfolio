@@ -1,291 +1,578 @@
 /* src/components/About.css */
 .about {
-    padding: 100px 2rem;
-    background: #ffffff;
-    position: relative;
+  background: #7E6961;
+  padding: 80px 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #CBC0B2;
+}
+
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease 0.2s;
+}
+
+.about-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.title-container {
+  display: inline-block;
+  position: relative;
+}
+
+.about-header h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 1rem 0;
+  line-height: 1.1;
+}
+
+.title-accent {
+  width: 120px;
+  height: 4px;
+  background: #550B14;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  color: #9CA3AF;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+/* Main Content Layout */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-bottom: 6rem;
+}
+
+/* Main Content Column */
+.main-content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-card {
+  background: #CBC0B2;
+  padding: 2.5rem 2.5rem;
+  border-radius: 20px;
+  border: 1px solid #7E6961;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #550B14;
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  border-color: #374151;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+}
+
+.card-header h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #550B14;
+  margin: 0;
+}
+
+.content-card p {
+  font-size: 1.2rem;
+  color: #550B14;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+}
+
+.content-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Stats Card */
+.stats-card {
+  background: #550B14;
+  border: 1px solid #7E6961;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: #CBC0B2;
+  border-radius: 15px;
+  border: 0px solid #F8F8F7;
+}
+
+.stat-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #550B14;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #550B14;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Highlight Text */
+.highlight-text {
+  background: #550B14;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #7E6961;
+  font-weight: 600;
+  color: #CBC0B2;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+/* Original Closing Line (removed from journey card) */
+.closing-line {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #8B5CF6;
+  font-style: italic;
+}
+
+/* New Bigger Closing Line below image */
+.closing-line-big {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f2f2f2;
+  font-style: italic;
+  text-align: center;
+  margin-top: 3rem;
+  line-height: 1.4;
+  padding: 0 2rem;
+}
+
+/* Image Column */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main-image-placeholder {
+  width: 90%;
+  height: 630px;
+  background: #111111;
+  border-radius: 20px;
+  border: 1px solid #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Why Strategist Section */
+.why-strategist-section {
+  margin-bottom: 6rem;
+}
+
+.why-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Why Image Column */
+.why-image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-image-placeholder {
+  width: 90%;
+  height: 830px;
+  background: #111111;
+  border-radius: 20px;
+  border: 1px solid #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Why Content Column */
+.why-content-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-main-card {
+  background: #550B14;
+  color: #F8F8F7;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  border: 1px solid #7E6961;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-main-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #550B14;
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.why-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.why-main-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+  color: #F8F8F7;
+}
+
+.why-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.why-point-card {
+  background: #CBC0B2;
+  padding: 1.8rem;
+  border-radius: 15px;
+  border: 1px solid #CBC0B2;
+}
+
+.why-intro {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #550B14;
+  text-align: center;
+  margin: 0;
+}
+
+.why-point-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #550B14;
+  margin: 0 0 1rem 0;
+}
+
+.why-point-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #550B14;
+  margin: 0;
+}
+
+.portfolio-cta-section {
+  text-align: center;
+  margin: 4rem 0;
+  padding: 3rem 0;
+}
+
+.portfolio-cta-card {
+  display: inline-block;
+  background: #1E293B;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  border: 1px solid #374151;
+}
+
+.portfolio-cta-card p {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin: 0;
+  color: #f1f1f1;
+  line-height: 1.4;
+}
+
+/* Skills Showcase */
+.skills-showcase {
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+
+.skills-showcase h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 3rem 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.skill-item {
+  background: #111111;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  border: 1px solid #374151;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.skill-item:hover {
+  transform: translateY(-8px);
+  border-color: #667eea;
+  background: #0F172A;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-item h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #667eea;
+  margin: 0 0 1rem 0;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  color: #D1D5DB;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-content,
+  .why-content-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
   
-  .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
-  /* Header */
-  .about-header {
-    text-align: center;
-    margin-bottom: 4rem;
-    position: relative;
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .main-image-placeholder,
+  .why-image-placeholder {
+    width: 100%;
+    height: 350px;
+  }
+
+  .closing-line-big {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 1rem;
   }
   
   .about-header h2 {
     font-size: 3rem;
-    font-weight: 700;
-    color: #2d3748;
-    margin-bottom: 1rem;
-    display: inline-block;
   }
   
-  .header-accent {
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    margin: 0 auto;
-    border-radius: 2px;
+  .content-card {
+    padding: 2rem 1.5rem;
   }
   
-  /* Main Content Layout */
-  .about-content {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
-    align-items: start;
-  }
-  
-  /* Story Column */
-  .story-column {
-    padding-right: 2rem;
-  }
-  
-  .story-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .story-content p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #4a5568;
-    margin: 0;
-  }
-  
-  .story-intro {
-    font-size: 1.2rem !important;
-    font-weight: 500;
-    color: #2d3748 !important;
-    border-left: 4px solid #667eea;
-    padding-left: 1.5rem;
-  }
-  
-  .story-continued {
-    font-style: italic;
-    color: #718096 !important;
-  }
-  
-  /* Highlight Stats */
-  .highlight-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 1rem 0;
-    padding: 2rem;
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    border-radius: 15px;
-    border: 1px solid #e2e8f0;
-  }
-  
-  .stat-item {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  .card-header h3 {
+    font-size: 1.5rem;
   }
   
   .stat-number {
     font-size: 2.5rem;
-    font-weight: 700;
-    color: #667eea;
-    line-height: 1;
   }
   
-  .stat-label {
-    font-size: 0.9rem;
-    color: #718096;
-    font-weight: 500;
+  .why-main-card {
+    padding: 2.5rem 2rem;
   }
   
-  /* Highlight Text */
-  .highlight-text {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-    padding: 1.5rem;
-    border-radius: 12px;
-    border-left: 4px solid #764ba2;
-    font-weight: 500 !important;
-    color: #2d3748 !important;
+  .why-main-card h3 {
+    font-size: 1.7rem;
   }
   
-  .closing-line {
-    font-size: 1.2rem !important;
-    font-weight: 600;
-    color: #2d3748 !important;
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-image-placeholder,
+  .why-image-placeholder {
+    height: 300px;
+  }
+
+  .closing-line-big {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  .portfolio-cta-section {
+    margin: 3rem 0;
+    padding: 2rem 0;
+  }
+  
+  .portfolio-cta-card {
+    padding: 1.5rem 2rem;
+  }
+  
+  .portfolio-cta-card p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .card-header {
+    flex-direction: column;
     text-align: center;
-    padding: 1.5rem;
-    background: rgba(255, 215, 0, 0.1);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 215, 0, 0.2);
+    gap: 0.5rem;
   }
   
-  /* Why Column */
-  .why-column {
-    position: sticky;
-    top: 2rem;
+  .stat-number {
+    font-size: 2rem;
   }
   
-  .why-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 3rem 2.5rem;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .why-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(30deg);
+  .why-main-card {
+    padding: 2rem 1.5rem;
   }
   
   .why-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 2;
+    font-size: 2.8rem;
   }
   
-  .why-card h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    position: relative;
-    z-index: 2;
-    line-height: 1.3;
-  }
-  
-  .why-content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  .why-main-card h3 {
+    font-size: 1.5rem;
   }
   
   .why-intro {
-    font-size: 1.3rem !important;
-    font-weight: 600;
-    line-height: 1.4 !important;
-    color: white !important;
-    text-align: center;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.2rem;
   }
   
-  .why-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0;
+  .skills-showcase h3 {
+    font-size: 2rem;
   }
-  
-  .value-proposition {
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    border-left: 4px solid rgba(255, 255, 255, 0.3);
+
+  .main-image-placeholder,
+  .why-image-placeholder {
+    height: 250px;
   }
-  
-  .portfolio-cta {
-    text-align: center;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  .closing-line-big {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
   }
-  
-  .portfolio-cta p {
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .about-content {
-      grid-template-columns: 1fr;
-      gap: 3rem;
-    }
-    
-    .story-column {
-      padding-right: 0;
-    }
-    
-    .why-column {
-      position: static;
-    }
-    
-    .highlight-stats {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .about {
-      padding: 80px 1rem;
-    }
-    
-    .about-header h2 {
-      font-size: 2.5rem;
-    }
-    
-    .story-content p {
-      font-size: 1rem;
-    }
-    
-    .stat-number {
-      font-size: 2rem;
-    }
-    
-    .why-card {
-      padding: 2.5rem 2rem;
-    }
-    
-    .why-card h3 {
-      font-size: 1.6rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .about-header h2 {
-      font-size: 2rem;
-    }
-    
-    .highlight-stats {
-      padding: 1.5rem;
-    }
-    
-    .stat-number {
-      font-size: 1.8rem;
-    }
-    
-    .why-card {
-      padding: 2rem 1.5rem;
-    }
-    
-    .why-icon {
-      font-size: 2.5rem;
-    }
-    
-    .why-card h3 {
-      font-size: 1.4rem;
-    }
-    
-    .why-intro {
-      font-size: 1.1rem !important;
-    }
-  }
+}

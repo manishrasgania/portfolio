@@ -18,7 +18,7 @@ const Portfolio = () => {
 
   const portfolioData = [
     {
-      id: 1,
+      id: 2,
       client: "Catch Foods",
       product: "Ginger-Garlic Paste & Schezwan Paste",
       logo: catchFoodsLogo,
@@ -36,7 +36,7 @@ const Portfolio = () => {
       status: "📊 Campaign ongoing — performance results to follow post-completion."
     },
     {
-      id: 2,
+      id: 6,
       client: "Creme21 India",
       product: "Moisturizer",
       logo: creme21Logo,
@@ -52,7 +52,7 @@ const Portfolio = () => {
       results: "Delivered relatable, lifestyle-driven visibility and positioned Creme21 as the everyday moisturizer for all skin types and ages."
     },
     {
-      id: 3,
+      id: 7,
       client: "Dexogrow",
       product: "Kids' Nutrition Supplement",
       logo: dexogrowLogo,
@@ -69,7 +69,7 @@ const Portfolio = () => {
       results: "Created an emotional and educational narrative around brain nourishment — increasing brand trust and awareness across Tier 2 & 3 audiences."
     },
     {
-      id: 4,
+      id: 8,
       client: "Mrs. Bector's English Oven",
       campaign: "#SliceOfTrust",
       logo: mrsBectorsLogo,
@@ -85,7 +85,7 @@ const Portfolio = () => {
       results: "Reinforced English Oven's credibility as the genuine healthy bread brand and drove engagement on authenticity-led narratives."
     },
     {
-      id: 5,
+      id: 4,
       client: "Nihar Naturals",
       product: "Hair Oil - Mother's Day Campaign",
       logo: niharLogo,
@@ -101,7 +101,7 @@ const Portfolio = () => {
       results: "A heartfelt campaign that redefined Nihar as a symbol of love and care — transforming a product into a shared family ritual."
     },
     {
-      id: 6,
+      id: 3,
       client: "NIVEA",
       product: "Caring Beauty Lip & Cheek 3-in-1",
       logo: niveaLogo,
@@ -118,7 +118,7 @@ const Portfolio = () => {
       results: "Boosted awareness and relatability in the affordable beauty segment. Strengthened NIVEA's equity as a care-meets-cosmetics brand."
     },
     {
-      id: 7,
+      id: 5,
       client: "NIVEA Sun",
       product: "SPF 50 Sunscreen - #LetsFaceTheFacts",
       logo: niveaSunLogo,
@@ -137,7 +137,7 @@ const Portfolio = () => {
       results: "Strengthened NIVEA's position as the go-to expert in suncare, driving awareness on year-round sunscreen usage through relatable creator storytelling."
     },
     {
-      id: 8,
+      id: 1,
       client: "Tata Simply Better",
       product: "Cold Pressed Oils - #HoliBiteFest",
       logo: tataLogo,
@@ -171,7 +171,8 @@ const Portfolio = () => {
       <div className="portfolio-container">
         <div className="portfolio-header">
           <h2>Campaign Portfolio</h2>
-          <p>Strategic marketing campaigns that delivered measurable results across diverse industries</p>
+          <p>Ideas that started on sticky notes and somehow made it to the real world.
+          </p>
         </div>
         
         {/* Category Filters */}
@@ -207,17 +208,16 @@ const Portfolio = () => {
                 <h3>{project.client}</h3>
                 <p className="product">{project.product}</p>
                 {project.role && <span className="role">{project.role}</span>}
-                
-                <p className="objective-preview">{project.objective.substring(0, 100)}...</p>
-                
-                <div className="card-footer">
-                  <div className="view-case-study">
-                    View Case Study <span className="arrow">→</span>
-                  </div>
-                  <div className="category-tag">
+                <div className="category-tag">
                     {categories.find(cat => cat.id === project.category)?.name}
                   </div>
+                <div className="card-footer">
+                  <div className="view-case-study">
+                  View Campaign Report <span className="arrow">→</span>
+                  </div>
+                  
                 </div>
+               
               </div>
             </div>
           ))}
@@ -279,6 +279,24 @@ const Portfolio = () => {
           </div>
         </div>
       )}
+      
+      {/* Linktree Section */}
+      <div className="linktree-section">
+        <div className="linktree-content">
+          <h3>If portfolios had a <i>see more</i> button — this is it.</h3>
+          <p>Here's where all my previous work lives, from copywriting and content projects to websites, web copies, social media and more. — all curated here on my Linktree.
+          </p>
+          <a 
+            href="https://linktr.ee/Radhika1804" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="linktree-button"
+          >
+            <span className="linktree-icon">🔗</span>
+            Discover More on Linktree. 
+          </a>
+        </div>
+      </div>
     </section>
   );
 };

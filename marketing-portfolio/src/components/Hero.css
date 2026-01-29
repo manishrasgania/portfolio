@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: #550B14;
     overflow: hidden;
     padding: 80px 2rem 2rem;
   }
@@ -27,7 +27,8 @@
   .shape {
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    background: #7E6961;
+    opacity: 30%;
   }
   
   .shape-1 {
@@ -95,7 +96,7 @@
   
   .greeting-badge {
     background: rgba(102, 126, 234, 0.1);
-    color: #667eea;
+    color: #CBC0B2;
     padding: 0.6rem 1.5rem;
     border-radius: 20px;
     font-weight: 600;
@@ -125,13 +126,13 @@
   .title-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2d3748;
+    color: #F8F8F7;
     margin: 0 0 0.5rem 0;
     line-height: 1.2;
   }
   
   .highlight {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #F8F8F7;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -141,24 +142,24 @@
   .title-section h3 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #718096;
+    color: #CBC0B2;
     margin: 0;
     font-style: italic;
   }
   
   /* Enhanced Description */
   .description-enhanced {
-    background: rgba(255, 255, 255, 0.7);
+    background: #CBC0B2;
     backdrop-filter: blur(10px);
     padding: 1.5rem;
     border-radius: 15px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #7E6961;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   }
   
   .description-enhanced p {
     font-size: 1.1rem;
-    color: #4a5568;
+    color: #550B14;
     line-height: 1.6;
     margin: 0;
     text-align: left;
@@ -175,13 +176,13 @@
   .divider-line {
     flex: 1;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #667eea, transparent);
+    background: linear-gradient(90deg, transparent, #CBC0B2, transparent);
   }
   
   .divider-dot {
     width: 8px;
     height: 8px;
-    background: #667eea;
+    background: #CBC0B2;
     border-radius: 50%;
     animation: pulse 2s ease-in-out infinite;
   }
@@ -198,8 +199,8 @@
   }
   
   .cta-button-enhanced {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, #CBC0B2 0%, #CBC0B2 100%);
+    color: #550B14;
     border: none;
     padding: 1.2rem 2.5rem;
     border-radius: 50px;
@@ -207,7 +208,7 @@
     font-size: 1.1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 8px 25px rgba(154, 56, 56, 0.3);
     display: flex;
     align-items: center;
     gap: 0.8rem;
@@ -261,12 +262,12 @@
   
   .image-frame {
     position: relative;
-    width: 420px;
-    height: 420px;
+    width: 520px;
+    height: 520px;
     border-radius: 500px;
-    background: linear-gradient(135deg, #667eea 0%, #66c390 40%, #4eace7 70%,#a168b4 100%);
+    background: linear-gradient(135deg, #CBC0B2 0%, #7E6961 40%, #F8F8F7 70%,#550B14 100%);
     padding: 15px;
-    box-shadow: 0 25px 50px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 25px 50px rgba(228, 98, 98, 0.4);
     animation: float 6s ease-in-out infinite;
     z-index: 2;
   }

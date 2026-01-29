@@ -1,7 +1,7 @@
 /* src/components/Portfolio.css */
 .portfolio {
   padding: 100px 2rem;
-  background: #f8fafc;
+  background: #7E6961;
 }
 
 .portfolio-container {
@@ -17,14 +17,14 @@
 .portfolio-header h2 {
   font-size: 3rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #FFF;
   margin-bottom: 1rem;
 }
 
 .portfolio-header p {
   font-size: 1.2rem;
-  color: #718096;
-  max-width: 600px;
+  color: #F8F8F7;
+  max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
 }
@@ -51,15 +51,15 @@
 }
 
 .filter-btn:hover {
-  border-color: #667eea;
-  color: #667eea;
+  border-color: #550B14;
+  color: #550B14;
   transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background: #667eea;
+  background: #550B14;
   color: white;
-  border-color: #667eea;
+  border-color: #550B14;
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
 }
 
@@ -89,33 +89,34 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #550B14 0%, #550B14 100%);
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* Updated Card Styles */
 .card-header {
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 2rem 2rem 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .brand-logo {
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
   background: white;
-  border-radius: 8px;
-  padding: 0.4rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #f8f9fa;
+  border: 2px solid #f8f9fa;
 }
 
 .brand-logo img {
@@ -125,91 +126,88 @@
 }
 
 .budget-badge {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #550B14 0%, #550B14 100%);
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.85rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1rem;
   white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .card-content {
-  padding: 0 1.5rem 1.5rem;
+  padding: 0 2rem 2rem;
+  text-align: center;
 }
 
 .card-content h3 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #2d3748;
-  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #550B14;
+  margin: 0 0 0.8rem 0;
   line-height: 1.3;
 }
 
 .product {
-  color: #667eea;
-  font-weight: 500;
-  font-size: 0.9rem;
-  margin: 0 0 0.8rem 0;
+  color: #550B14;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .role {
   background: rgba(102, 126, 234, 0.1);
-  color: #667eea;
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-weight: 500;
+  color: #550B14;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
   display: inline-block;
-  margin-bottom: 1rem;
-}
-
-.objective-preview {
-  color: #718096;
-  line-height: 1.5;
-  margin: 0 0 1.5rem 0;
-  font-size: 0.9rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin-bottom: 1.5rem;
 }
 
 .card-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .view-case-study {
-  color: #667eea;
-  font-weight: 600;
-  font-size: 0.85rem;
+  color: #550B14;
+  font-weight: 700;
+  font-size: 1rem;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  transition: gap 0.3s ease;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
 }
 
-.project-card:hover .view-case-study .arrow {
-  transform: translateX(3px);
+.project-card:hover .view-case-study {
+  gap: 0.8rem;
 }
 
 .arrow {
   transition: transform 0.3s ease;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.project-card:hover .arrow {
+  transform: translateX(5px);
 }
 
 .category-tag {
   background: rgba(102, 126, 234, 0.1);
-  color: #667eea;
-  padding: 0.25rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-weight: 500;
+  color: #550B14;
+  padding: 0.4rem 1rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
   white-space: nowrap;
   border: 1px solid rgba(102, 126, 234, 0.2);
+  margin-top: 1rem;
 }
 
 /* Modal Styles */
@@ -297,7 +295,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #550B14 0%, #550B14 100%);
 }
 
 .modal-brand {
@@ -330,13 +328,13 @@
 .modal-client-info h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #550B14;
   margin: 0 0 0.5rem 0;
   line-height: 1.2;
 }
 
 .modal-product {
-  color: #667eea;
+  color: #550B14;
   font-weight: 600;
   font-size: 1rem;
   margin: 0 0 0.5rem 0;
@@ -344,7 +342,7 @@
 
 .modal-role {
   background: rgba(102, 126, 234, 0.1);
-  color: #667eea;
+  color: #550B14;
   padding: 0.4rem 1rem;
   border-radius: 15px;
   font-size: 0.85rem;
@@ -352,7 +350,7 @@
 }
 
 .modal-budget {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #550B14 0%, #550B14 100%);
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
@@ -377,14 +375,14 @@
 .section h4 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #2d3748;
+  color: #550B14;
   margin-bottom: 1rem;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #550B14;
   padding-left: 1rem;
 }
 
 .section p {
-  color: #4a5568;
+  color: #550B14;
   line-height: 1.6;
   font-size: 1rem;
   margin: 0;
@@ -398,7 +396,7 @@
 
 .execution-list li {
   padding: 0.8rem 0;
-  color: #4a5568;
+  color: #550B14;
   line-height: 1.5;
   position: relative;
   padding-left: 1.5rem;
@@ -411,7 +409,7 @@
 
 .execution-list li::before {
   content: "•";
-  color: #667eea;
+  color: #550B14;
   font-weight: bold;
   font-size: 1.2rem;
   position: absolute;
@@ -426,6 +424,57 @@
   border-radius: 8px;
   margin-top: 1rem !important;
   font-weight: 500;
+}
+
+/* Linktree Section Styles */
+.linktree-section {
+  margin-top: 4rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #550B14 0%, #550B14 100%);
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.linktree-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.linktree-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.linktree-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: white;
+  color: #550B14;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.linktree-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.linktree-icon {
+  font-size: 1.3rem;
 }
 
 /* Responsive Design */
@@ -488,6 +537,44 @@
   .modal-client-info h2 {
     font-size: 1.8rem;
   }
+
+  .linktree-section {
+    padding: 2.5rem 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .linktree-content h3 {
+    font-size: 1.7rem;
+  }
+  
+  .linktree-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+  }
+
+  /* Responsive adjustments for cards */
+  .card-header {
+    padding: 1.5rem 1.5rem 1rem;
+  }
+  
+  .brand-logo {
+    width: 100px;
+    height: 100px;
+    padding: 0.8rem;
+  }
+  
+  .budget-badge {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .card-content {
+    padding: 0 1.5rem 1.5rem;
+  }
+  
+  .card-content h3 {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -505,7 +592,7 @@
   
   .card-footer {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.8rem;
   }
   
@@ -522,6 +609,21 @@
   }
   
   .section h4 {
+    font-size: 1.2rem;
+  }
+
+  .brand-logo {
+    width: 80px;
+    height: 80px;
+    padding: 0.6rem;
+  }
+  
+  .budget-badge {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .card-content h3 {
     font-size: 1.2rem;
   }
 }

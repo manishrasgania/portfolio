@@ -54,16 +54,14 @@ const Hero = () => {
           {/* Title and Description with Better Layout */}
           <div className="intro-content">
             <div className="title-section">
-              <h2>Hey, I'm <span className="highlight">Radhika Sharma</span></h2>
+              <h2>Hey, I am <span className="highlight">Radhika Sharma</span></h2>
               <h3>A Brand & Marketing Strategist</h3>
             </div>
 
             <div className="description-enhanced">
-              <p>
-                I craft innovative marketing solutions that drive measurable results. 
-                With expertise in brand strategy, digital campaigns, and growth marketing, 
-                I help businesses achieve their goals through data-informed decisions.
-              </p>
+              <p><b>
+              I've spent five years writing, creating, strategizing, and occasionally crying over campaign decks — started as a content writer, to copy and social media manager, and now I have carved my path out as a creative marketing/brand strategist.
+              </b></p>
             </div>
           </div>
 
@@ -94,7 +92,7 @@ const Hero = () => {
             
           </div>
           
-          {/* Smaller Floating Cards around the image */}
+          {/* Smaller Floating Cards around the image 
           <div className="floating-card card-1">
             <div className="card-icon">📈</div>
             <h4>Marketing</h4>
@@ -107,6 +105,7 @@ const Hero = () => {
             <div className="card-icon">🚀</div>
             <h4>Consumer Psychology</h4>
           </div>
+          */}
         </div>
       </div>
     </section>

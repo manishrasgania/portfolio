@@ -1,7 +1,7 @@
 /* src/components/ContactInfo.css */
 .contact-info {
   padding: 100px 2rem;
-  background: #f8fafc;
+  background: #550B14;
 }
 
 .contact-container {
@@ -18,12 +18,12 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #2d3748;
+  color: #F8F8F7;
 }
 
 .contact-header p {
   font-size: 1.2rem;
-  color: #718096;
+  color: #F8F8F7;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -58,38 +58,46 @@
 }
 
 .contact-icon {
-  font-size: 3.5rem;
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  border: 2px solid #f1f5f9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .contact-card:hover .contact-icon {
   transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
 .contact-content h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #2d3748;
+  color: #550B14;
   margin-bottom: 1rem;
 }
 
 .contact-content p {
-  color: #718096;
+  color: #550B14;
   margin-bottom: 2rem;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .contact-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #550B14 0%, #550B14 100%);
   color: white;
   border: none;
   padding: 12px 30px;
@@ -98,12 +106,12 @@
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(85, 11, 20, 0.3);
 }
 
 .contact-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(85, 11, 20, 0.4);
 }
 
 /* Responsive Design */
@@ -130,7 +138,11 @@
   .contact-icon {
     width: 80px;
     height: 80px;
-    font-size: 2.8rem;
+  }
+  
+  .contact-logo {
+    width: 40px;
+    height: 40px;
   }
 }
 

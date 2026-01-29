@@ -6,6 +6,8 @@ import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import About from './components/About'; // Add this import
 import Contact from './components/ContactInfo';
+import Insights from './components/Insights';
+import Brands from './components/Brands';
 import './App.css';
 
 function App() {
@@ -14,7 +16,10 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Insights />
+      <Brands/>
       <Portfolio />
+      
       <Services />
       <Contact />
     </div>
